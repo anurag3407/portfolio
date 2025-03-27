@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.sidebar {
+	/* background-color: aqua; */
+	height: 100vh;
+	width: 15vw;
+}
+
+.sidebar img {
+	width: 100%;
+	height: auto;
+}
+
+.startpage {
+	/* background-color: rgb(97, 173, 97); */
+	height: 100vh;
+	width: 35vw;
+}
+
+.navup ul {
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 22vh;
+	cursor: pointer;
+	font-size: 0.625rem;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(59, 57, 57);
+}
+
+.navup ul li:first-child {
+	color: black;
+}
+
+.startpage h2 {
+	font-size: 3.125rem;
+	font-weight: 500;
+	margin-top: 15vh;
+}
+
+.startpage h2 span {
+	font-weight: bolder;
+}
+
+.startpage p {
+	font-size: 1.25rem;
+	margin-top: 5vh;
+	padding-right: 2.5rem;
+}
+
+.work-button1 {
+	font-size: 0.625rem;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: blue;
+	padding: 0.625rem;
+	width: 10.625rem;
+	border: 1.5px solid blue;
+	height: 2.8125rem;
+	color: white;
+	border-radius: 0.25rem;
+	margin-top: 4vh;
+}
+
+.navdown ul {
+	margin-top: 13vh;
+	padding-right: 15vw;
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5vh;
+	cursor: pointer;
+	font-size: 0.8125;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(59, 57, 57);
+}
+
+.introdesign {
+	background-color: rgb(40, 40, 208);
+	height: 100vh;
+	width: 50vw;
+}
+
+.work-button {
+	font-size: 10px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 30vw;
+	margin-top: 7vh;
+	background-color: transparent;
+	stroke: white;
+	padding: 10px;
+	width: 170px;
+	border: 1.5px solid white;
+	height: 45px;
+	color: white;
+	border-radius: 4px;
+}
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+.work-button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+.work-button1:hover {
+	cursor: pointer;
+	background-color: white;
+	color: blue;
+}
+
+.screen {
+	background-color: rgb(35, 35, 35);
+	width: 35vw;
+	height: 20vw;
+	margin-top: 20vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+/* Media Query for responsive screen height */
+@media screen and (max-width: 450px) {
+	.screen {
+		height: auto; /* Adjust height automatically */
+		width: 90%; /* Adjust width for smaller screens */
+		margin: 20px auto; /* Center align */
+	}
+}
+
+.screen .top {
+	height: 6vh;
+	background-color: rgb(78, 78, 78);
+	font-weight: bolder;
+	font-size: 20px;
+}
+.screen .top span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 15px 5px;
+}
+
+.screen .top span:nth-child(1) {
+	background-color: red;
+}
+
+.screen .top span:nth-child(2) {
+	background-color: yellow;
+}
+
+.screen .top span:nth-child(3) {
+	background-color: green;
+}
+.codecard{
+	display: flex;
+	flex-direction: row;
+	font-size : 0.75rem;
+}
+.textnumber{
+	margin-left:1vw;
+	color : grey;
+}
+.textcode p{
+	color:coral;
+	margin-top:2vh;
+	margin-left:3vw
+}
+.aboutme {
+	display: flex;
+	flex-direction: row;
+}
+
+.profilepic {
+	/* background-color: bisque; */
+	width: 150%;
+	height: 100vh;
+}
+
+.profilepic img {
+	width: 23vw;
+	height: 24vw;
+	margin-left: 17vw;
+	margin-top: 8vw;
+}
+
+.maincontent {
+	/* background-color:yellowgreen; */
+	height: 100vh;
+}
+
+.maincontent h1 {
+	font-size: 30px;
+	font-weight: 350;
+	margin-top: 16vh;
+	color: rgb(24, 24, 209)
+}
+
+.maincontent p {
+	font-size: 12px;
+	font-weight: 200;
+	margin-top: 5vh;
+}
+
+.serviceheading {
+	margin-left: 46.5vw;
+	font-size: 30px;
+	font-weight: 350;
+	color: rgb(24, 24, 209);
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+}
+
+.firstservice {
+	display: flex;
+	width: 100%;
+	height: 80vh;
+}
+
+.servicepic1 {
+	width: 50%;
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.tiltcard1 {
+	background-color: rgb(35, 35, 35);
+	margin-top : 5vh;
+	margin-left:15vw;
+	width: 300px;
+	height: 200px;
+	background-color: black ;
+	box-shadow:
+	0 15px 35px rgba(0, 0, 0, 0.3),
+	0 3px 10px rgba(0, 0, 0, 0.1);
+	transform: rotatez(45deg) rotatey(15deg);
+	transition: transform 0.5s ease;
+	position: relative;
+}
+.tiltcard1 .cardheader {
+	height: 6vh;
+	background-color: rgb(78, 78, 78);
+}
+.cardheader span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 15px 5px;
+	font-weight: bold;
+}
+
+.cardheader span:nth-child(1) {
+	background-color: red;
+}
+
+.cardheader span:nth-child(2) {
+	background-color: yellow;
+}
+
+.cardheader span:nth-child(3) {
+	background-color: green;
+}
+
+.serviceabout1 {
+	width: 50%;
+}
+
+.serviceabout1 h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20vh;
+	color: black;
+}
+
+.serviceabout1 p {
+	font-size: 12px;
+	line-height: 2;
+	margin-top: 2vh;
+	margin-right: 12vw;
+}
+
+.serviceabout1 button {
+	margin-top: 8vh
+}
+
+.secondservice {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+.serviceabout2 {
+	width: 50%;
+}
+
+.serviceabout2 h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20vh;
+	color: black;
+	margin-left: 13vw;
+}
+
+.serviceabout2 p {
+	font-size: 12px;
+	line-height: 2;
+	margin-top: 2vh;
+	margin-left: 13vw;
+	margin-right: 2vw;
+}
+
+.serviceabout2 button {
+	margin-top: 8vh;
+	margin-left: 13vw;
+}
+.tiltcard2 {
+	background-color: rgb(35, 35, 35);
+	margin-top : 20vh;
+	margin-left:15vw;
+	width: 300px;
+	height: 200px;
+	background-color: black ;
+	box-shadow:
+	0 15px 35px rgba(0, 0, 0, 0.3),
+	0 3px 10px rgba(0, 0, 0, 0.1);
+	transform: rotatez(45deg) rotatey(15deg);
+	transition: transform 0.5s ease;
+	position: relative;
+}
+.tiltcard2 .cardheader {
+	height: 6vh;
+	background-color: rgb(78, 78, 78);
+}
+
+.blog {
+	display: grid;
+	grid-template-columns: repeat(2, 50vw);
+	grid-template-rows: repeat(2, 70vh);
+
+}
+
+.blog1 {
+	background-color: rgb(53, 102, 249);
+	color: white;
+}
+
+.blog1 h2 {
+	margin-top: 7vh;
+	margin-left: 15vw;
+	margin-right: 5vw;
+}
+
+.blog1 p {
+	font-size:12px;
+	margin-top : 7vh;
+	margin-left: 15vw;
+	margin-right: 5vw;
+}
+
+.work-button2 {
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	width: 170px;
+	height: 45px;
+	border-radius: 4px;
+	border: none;
+	margin-top: 4vh;
+}
+
+.blog1 .work-button2 {
+	margin-left: 13vw;
+	margin-top: 7vh;
+	color: white;
+}
+
+.blog2 h2 {
+	margin-top: 7vh;
+	margin-left: 5vw;
+	margin-right: 15vw;
+}
+
+.blog2 p {
+	margin-top : 7vh;
+	font-size : 12px;
+	margin-left: 5vw;
+	margin-right: 15vw;
+
+}
+
+.blog2 .work-button2 {
+	margin-top : 7vh;
+	margin-left: 3vw;
+
+}
+
+.blog3 h2 {
+	margin-top: 7vh;
+	margin-left: 15vw;
+	margin-right: 5vw;
+}
+
+.blog3 p {
+	margin-top : 7vh;
+	font-size :12px;
+	margin-left: 15vw;
+	margin-right: 5vw;
+}
+
+.blog3 .work-button2 {
+	margin-left: 13vw;
+	margin-top : 7vh;
+}
+
+.blog4 {
+	background-color: rgb(35, 31, 31);
+	color: white;
+}
+
+.blog4 h2 {
+	margin-top: 7vh;
+	margin-left: 5vw;
+	margin-right: 15vw;
+}
+
+.blog4 p {
+	margin-top : 7vh;
+	margin-left: 5vw;
+	margin-right: 15vw;
+
+}
+
+.blog4 .work-button2 {
+	margin-top : 7vh;
+	margin-left: 3vw;
+	color: white;
+}
+
+.work-button2 {
+	cursor: pointer;
+}
+.opensource {
+	height: 100vh;
+}
+
+.opensource h1 {
+	color: rgb(24, 24, 209);
+	margin-left: 40vw;
+	margin-top: 20vh;
+	font-weight: lighter;
+}
+
+.cardcontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.cardcontainer .swapcard{
+	display : flex;
+	flex-direction: row;
+	transform: translateZ(10px);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	width: 20vw;
+	height: 15vw;
+	margin-left: 2vw;
+	margin-top: 15vh;
+}
+.swapsvg{
+	margin-left: 2vw;
+	margin-top : 6vh;
+}
+.swapsvg svg{
+	width : 3vw;
+	height : 3vw;
+}
+.cardcontainer .swapcontent{
+	display: flex;
+	flex-direction: column;
+	margin : 3vw;
+}
+.swapcontent p1{
+	font-size : 25px 
+}
+.swapcontent p2{
+	font-size: 12px;
+	margin-top: 1vw;
+}
+.swapcontent p3{
+	font-size : 12px;
+	font-weight: bolder;
+	margin-top : 1vw
+}
+.swapcard:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+.swapcard:hover .swapcontent p{
+	color: white;
+}
+
+.conclusion {
+	height: 50vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.conclusion h2 {
+	color: rgb(24, 24, 209);
+	font-weight: 350;
+	font-size: 30px;
+	margin-left: 15vw;
+
+}
+
+.conclusion p {
+	color: black;
+	font-size: 20px;
+	margin-left: 15vw;
+	margin-top: 2vh;
+}
+
+.conclusion .btn {
+	margin-left: 15vw;
+	margin-top: 3vh;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer img {
+	width: 200px;
+	margin-left: 12vw;
+	;
+}
+
+.company {
+	margin-left: -3vw;
+	margin-top: 3vw;
+}
+
+.navdown1 {
+	margin-left: 16vw;
+}
+
+.navdown1 ul {
+	margin-top: 7vh;
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5vh;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(59, 57, 57);
+}
+
+.navdown1 ul li {
+	margin: 2vw
+}
+
+/* Media Query for widths less than 450px */
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 14px; /* Adjust font sizes for better readability */
+    }
+
+    .intro {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        height: auto; /* Adjust height automatically */
+        text-align: center;
+    }
+    
+    .sidebar img {
+        width: 100px; /* Adjust logo size */
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .startpage {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
+        padding: 15px; /* Add space around */
+    }
+
+    .startpage h2 {
+        font-size: 24px; /* Adjust headline size */
+        text-align: center;
+    }
+
+    .startpage p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .work-button1 {
+        margin: 20px auto; /* Center align button */
+    }
+
+    .introdesign {
+        width: 100%; /* Full width for "introdesign" */
+        height: auto;
+    }
+
+    .screen {
+        margin: 20px auto; /* Center align */
+        width: 90%; /* Adjust width */
+        height: auto;
+    }
+
+    /* ABOUT ME section */
+    .aboutme {
+        flex-direction: column; /* Stack profile picture and content vertically */
+    }
+
+    .profilepic {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profilepic img {
+        width: 150px; /* Adjust profile picture size */
+        height: auto;
+    }
+
+    .maincontent {
+        width: 100%; /* Full width */
+        padding: 20px;
+    }
+
+    .maincontent h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .maincontent p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* SERVICES section */
+    .services {
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .firstservice,
+    .secondservice {
+        flex-direction: column; /* Stack image and text */
+        height: auto; /* Adjust height */
+    }
+
+    .servicepic1,
+    .servicepic2,
+    .serviceabout1,
+    .serviceabout2 {
+        width: 100%; /* Full width */
+        text-align: center; /* Center-align content */
+    }
+
+    .serviceabout1 h1,
+    .serviceabout2 h1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .serviceabout1 p,
+    .serviceabout2 p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .serviceabout1 button,
+    .serviceabout2 button {
+        margin: 10px auto;
+    }
+
+    /* BLOG section */
+    .blog {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .blog1, .blog2, .blog3, .blog4 {
+        width: 100%; /* Full width */
+        padding: 15px; /* Add padding */
+    }
+
+    .blog h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .blog p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* OPEN SOURCE Section */
+    .cardcontainer {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center-align cards */
+    }
+
+    .swapcard {
+        width: 90%; /* Full width for cards */
+        margin: 15px auto; /* Add spacing */
+    }
+
+    /* Conclusion Section */
+    .conclusion {
+        flex-direction: column; /* Stack elements */
+        text-align: center;
+    }
+
+    .conclusion h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .conclusion p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    /* Footer Section */
+    .footer {
+        flex-direction: column; /* Stack footer elements vertically */
+        text-align: center;
+    }
+
+    .footer img {
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .company {
+        margin: 10px 0;
+    }
+
+    .navdown1 ul {
+        flex-direction: column; /* Arrange links vertically */
+        align-items: center;
+    }
+
+    .navdown1 ul li {
+        margin: 5px;
+    }
+}
